@@ -1,0 +1,39 @@
+{
+  "name": "typescript-api-scaffold",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
+    "dev": "DEBUG=app:info tsx watch src/index.ts",
+    "test:e2e": "cucumber-js",
+    "build": "swc src -d dist --source-maps"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@swc/cli": "^0.6.0",
+    "@swc/core": "^1.11.5",
+    "@swc/jest": "^0.2.37",
+    "@types/debug": "^4.1.12",
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.14",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "globals": "^16.0.0",
+    "jest": "^29.7.0",
+    "node-fetch": "^3.3.2",
+    "tslib": "^2.8.1",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.25.0"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "debug": "^4.4.0",
+    "express": "^4.21.2"
+  }
+}
